@@ -7,6 +7,9 @@ class Quiz extends StatelessWidget{
     @override
     Widget build(BuildContext context){
         return MaterialApp(
+            theme: ThemeData(
+                unselectedWidgetColor: Color(0XFFE83B86),
+            ),
             home:InitialScreen(),
         );
     }
