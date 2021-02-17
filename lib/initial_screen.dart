@@ -54,6 +54,16 @@ class InitialScreen extends StatelessWidget{
                             ),
                         ),
                     ),
+                    SizedBox(
+                       height: MediaQuery.of(context).size.height * 0.25,
+                    ),
+                    Text(
+                        'by Diego',
+                        style: GoogleFonts.montserrat(
+                            fontSize: 15,
+                            color: Color(0XFFDA0175),
+                        ),
+                    ),
                 ],
             ),
         ); 

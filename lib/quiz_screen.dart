@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_quiz/question.dart';
+import 'package:flutter_quiz/score_screen.dart';
 
 class QuizScreen extends StatefulWidget{
     @override
@@ -10,6 +11,7 @@ class _QuizScreenState extends State<QuizScreen>{
     int answer = 0;
     int score = 0;
     int index = 0;
+    int numberQuestion = 1;
     List<Question> questionsList = Question.getQuestionsList();
     
     void verifyResponse() {
@@ -22,12 +24,13 @@ class _QuizScreenState extends State<QuizScreen>{
     Widget build(BuildContext context){
         final ButtonStyle responderButtonStyle = TextButton.styleFrom(
             primary: Colors.white,
-            backgroundColor: Color(0XFFDA0175),
+            backgroundColor: answer == 0 ?Color(0X35DA0175):Color(0XFFDA0175),
             minimumSize: Size(200, 39),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.all(Radius.circular(18.0)),
             )
         );
+
         return Scaffold(
             appBar: AppBar(
                 automaticallyImplyLeading: false,
@@ -41,12 +44,13 @@ class _QuizScreenState extends State<QuizScreen>{
             body: Column(
                 children:[
                     Container(
+                        width: MediaQuery.of(context).size.width * 1,
                         margin: EdgeInsets.fromLTRB(32,56,32,0),
                         child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children:[
                                 Text(
-                                    'Pergunta 1:',
+                                    'Pergunta $numberQuestion :',
                                     style: GoogleFonts.montserrat(
                                         fontSize: 12,
                                         fontWeight: FontWeight.w400,
@@ -353,19 +357,21 @@ class _QuizScreenState extends State<QuizScreen>{
                         child: Center(
                             child: TextButton(
                                 style: responderButtonStyle,
-                                onPressed: () {
+                                onPressed: answer==0?(){}:() {
                                     if(index < questionsList.length - 1){
                                         setState(() {
                                             verifyResponse();
                                             index = index + 1;
                                             answer = 0;
+                                            numberQuestion = numberQuestion + 1;
                                         });
                                     }else{
                                         setState(() {
-                                            /* Navigator.push(
+                                            verifyResponse();
+                                            Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => ScoreScreen()),
-                                            ); */
+                                                MaterialPageRoute(builder: (context) => ScoreScreen(maximun: questionsList.length,result: score,)),
+                                            ); 
                                         });
                                     }
                                 },
