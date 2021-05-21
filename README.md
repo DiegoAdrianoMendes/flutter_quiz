@@ -33,6 +33,9 @@ How to run the application
 ### Install the apk
 In [Quiz.apk](https://github.com/DiegoAdrianoMendes/flutter_quiz/tree/main/dist)
 
+
+---
+
 *Prerequisites: Dart, Flutter, Android Studio*
 
 ```bash
