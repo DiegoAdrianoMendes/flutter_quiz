@@ -10,6 +10,9 @@ The Trivia quiz is a mobile application developed during the flutter event from 
 The application consists of a game in which it is presented programming, and at the end the score that the user reached is presented.
 
 ## Layout
+![Mobile 1](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/screenshot/Screenshot_home.png)
+![Mobile 2](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/screenshot/Screenshort_Question.png)
+![Mobile 3](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/screenshot/Screenshort_Hits.png)
 
 ## Technogies Used
 <table>
@@ -28,7 +31,7 @@ The application consists of a game in which it is presented programming, and at 
 How to run the application
 ---
 ### Install the apk
-In ![Quiz.apk]()
+In [Quiz.apk](https://github.com/DiegoAdrianoMendes/flutter_quiz/tree/main/dist)
 
 *Prerequisites: Dart, Flutter, Android Studio*
 
@@ -46,7 +49,6 @@ cd flutter_quiz
 # displaying the diagnosis of your environment
 flutter doctor
 
-flutt
 # runs the application
 flutter run 
 ```
