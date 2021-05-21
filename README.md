@@ -1,5 +1,5 @@
 # Trivia Quiz
-[![](https://img.shields.io/badge/license-MIT-green)](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/LICENSE)
+[![Licesnse Badge](https://img.shields.io/badge/license-MIT-green)](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/LICENSE)
 
 > Status: Complete ✔️
 
@@ -27,20 +27,47 @@ The application consists of a game in which it is presented programming, and at 
 
 How to run the application
 ---
+### Install the apk
+In ![Quiz.apk]()
+
 *Prerequisites: Dart, Flutter, Android Studio*
 
-```bach
+```bash
 # clone repository
 git clone https://github.com/DiegoAdrianoMendes/flutter_quiz
 ```
-1. Emulate on the computer
+*⚠️if you have a weak computer I recommend emulating it on your android phone.⚠️*
+
+### Emulate on the computer
+```bash
+# enter the project folder
+cd flutter_quiz
+
+# displaying the diagnosis of your environment
+flutter doctor
+
+flutt
+# runs the application
+flutter run 
+```
 
 ### Emulate via cable on android phone
 1. In your phone settings select __*About Phone*__.
 2. Search for __*Build Number*__, click until it appears you became a developer.
 3. In your phone settings select __*System > Advanced > Developer Options*__.
 4. In __*Developer Options*__ search for __*Debugging*__, enable __*USB Debugging*__.
-5. Connect your USB cable to your computer
+5. Connect your USB cable to your computer.
+6. An allow USB debugging message will appear, click in allow.
+```bash
+# enter the project folder
+cd flutter_quiz
+
+# displaying the diagnosis of your environment
+flutter doctor
+
+# runs the application
+flutter run 
+```
 
 Author
 ---
