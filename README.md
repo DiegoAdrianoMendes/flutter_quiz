@@ -5,9 +5,11 @@
 
 ## About Project
 
-The Trivia quiz is a mobile application developed during the flutter event from scratch organized by [Cubos Academy](https://cubos.academy/).
+The Trivia quiz is a mobile application developed during the flutter event "Imersão Flutter do Zero" organized by [Cubos Academy](https://cubos.academy/).
 
-The application consists of a game in which it is presented programming, and at the end the score that the user reached is presented.
+The application consists of a game in which a series of programming questions are presented, and at the end the user's score is presented.
+
+The app was developed using flutter
 
 ## Layout
 ![Mobile 1](https://github.com/DiegoAdrianoMendes/flutter_quiz/blob/main/screenshot/Screenshot_home.png)
